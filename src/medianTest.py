@@ -3,7 +3,7 @@ Created on Apr 5, 2013
 
 @author: zeroshiiro
 '''
-from median import *
+from median import MedianFinder
 import unittest
 
 class TestMedianFinder(unittest.TestCase):
