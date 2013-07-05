@@ -10,10 +10,9 @@ for i in range(0, int(input())):
     line.append(input())
 
 for i in range(0,int(input())):
-    w = "(?!\W)" + input() + "(?=\W)"
     count = 0
+    w = input()
     for j in line:
-        m = re.findall(w, j)
-#        print(m)
+        m = re.findall(r"(?<!\w)" + w + "(?!\w)", j)
         count += len(m)
     print(count)
